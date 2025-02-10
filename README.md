@@ -1,92 +1,89 @@
-Task Manager CLI Tool
+**Task Manager CLI Tool**
 
-Overview
-
+**Overview**
 The Task Manager CLI tool allows users to manage their tasks using a simple command-line interface. It provides functionalities to add, update, delete, list, and change the status of tasks.
 
-Features
+**Features**
+> Add new tasks with a unique identifier.
 
-Add new tasks with a unique identifier.
+> Update existing tasks.
 
-Update existing tasks.
+> Delete tasks.
 
-Delete tasks.
+> List all tasks.
 
-List all tasks.
+> Mark tasks as to-do, in-progress, or done.
 
-Mark tasks as to-do, in-progress, or done.
+> Filter tasks based on their status.
 
-Filter tasks based on their status.
+**Installation**
+> Ensure you have Node.js installed. Clone the repository and install dependencies:
 
-Installation
-
-Ensure you have Node.js installed. Clone the repository and install dependencies:
-
-npm install
+> npm install -g task-manage
 
 Usage
 
 Run the CLI tool using:
 
-node index.js <command> [arguments]
+task-manage <command> [arguments]
 
-Commands
+**Commands**
 
-1. Add a Task
+1. *Add a Task*
 
-node index.js add "Task Description" <task_id>
+task-manage add "Task Description" <task_id>
 
 Adds a new task with a given ID and marks it as to-do by default.
 
-2. Update a Task
+2. *Update a Task*
 
-node index.js update <task_id> "Updated Task Description"
+task-manage update <task_id> "Updated Task Description"
 
 Updates the task description without modifying the status.
 
-3. Delete a Task
+3. *Delete a Task*
 
-node index.js delete <task_id>
+task-manage delete <task_id>
 
 Removes a task from the list.
 
-4. List All Tasks
+4. *List All Tasks*
 
-node index.js list
+task-manage index.js list
 
 Displays all tasks in a tabular format.
 
-5. Change Task Status
+5. *Change Task Status*
 
 Mark as In-Progress
 
-node index.js mark_in_progress <task_id>
+task-manage mark_in_progress <task_id>
 
 Changes task status to in-progress.
 
 Mark as Done
 
-node index.js mark_done <task_id>
+task-manage mark_done <task_id>
 
 Changes task status to done.
 
-6. Filter Tasks by Status
+6. *Filter Tasks by Status*
 
 List Completed Tasks
 
-node index.js list_done
+task-manage list_done
 
 List Tasks In-Progress
 
-node index.js list_in_progress
+task-manage list_in_progress
 
 List To-Do Tasks
 
-node index.js list_todo
+task-manage list_todo
 
 7. Help
 
-node index.js help
+task-manage help
 
 Displays available commands.
 
